@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    padding: 1.5rem 6rem;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar .container{
+    background-color: #D0DCFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#navbar .container .nav-link .nav-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar .container .nav-link .contact-btn{
+    padding: 0.75rem 1.5rem;
+    background-color: blue;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#navbar .container .nav-link .contact-btn > a{
+    color: white;
+}
+
+#navbar .container .nav-link .contact-btn:hover{
+    background-color: rgb(63, 63, 172);
+    color: #D0DCFA;
+}
+
+#navbar .container .nav-link .nav-menu > a:hover{
+    border-bottom:  3px solid  #48acd6;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    #navbar .container .nav-link{
+        display: none;
+    }
+}
